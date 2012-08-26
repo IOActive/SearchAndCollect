@@ -1,4 +1,4 @@
 SearchAndCollect
 ================
 
-search and collect windows files from multiple locations on machine and store in one centralized directory
+Search and collect executable files (Windows PE file format only) recursively from a parent directory and store in one centralized directory
