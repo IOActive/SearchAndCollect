@@ -439,6 +439,11 @@ int CopyAllFilesToDirInCwd( std::vector<string> out )
 		// if it does NOT create one
 		if( !CreateDirectory( collectionDir.c_str(), NULL ) ) 
 		{
+			string err;
+			GetStrForLastError(err);
+			printf( "Failed to create directory %s\n", collectionDirName.c_str() );
+			printf( "Error: %s\n", err.c_str() );
+
 			DebugMsg( "Failed to create directory %s", collectionDir.c_str() );
 			return -1;
 		}
