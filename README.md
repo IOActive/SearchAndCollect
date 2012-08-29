@@ -9,6 +9,7 @@ Syntax is as follows:
 
 	SearchAndCollect -d "C:\Windows" 
 or
+
 	SearchAndCollect.exe -d "%ProgramFiles%"
 
 The output would be something like this:
